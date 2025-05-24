@@ -1,0 +1,137 @@
+.internship-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.internship-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.company-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.company-info img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+.company-info h3 {
+  font-size: 18px;
+  color: #2d3748;
+  margin-bottom: 5px;
+}
+
+.company-name {
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.location {
+  font-size: 13px;
+  color: #718096;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.internship-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 12px;
+  color: #718096;
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.skill-tag {
+  background: #edf2f7;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #4a5568;
+}
+
+.internship-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.view-details,
+.apply-now {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.view-details {
+  background: #fff;
+  color: #4299e1;
+  border: 1px solid #4299e1;
+}
+
+.view-details:hover {
+  background: #ebf8ff;
+}
+
+.apply-now {
+  background: #4299e1;
+  color: #fff;
+  border: 1px solid #4299e1;
+}
+
+.apply-now:hover {
+  background: #3182ce;
+}
+
+@media (max-width: 600px) {
+  .internship-details {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .internship-actions {
+    flex-direction: column;
+  }
+
+  .view-details,
+  .apply-now {
+    width: 100%;
+    text-align: center;
+  }
+}
